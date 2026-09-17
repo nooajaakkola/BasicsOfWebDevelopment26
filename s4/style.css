@@ -134,6 +134,7 @@ h1 {
     gap: 1.5rem;
 }
 
+
 .card {
     padding: 2rem;
     background-color: var(--light);
@@ -167,11 +168,11 @@ h1 {
 
 
 .card2:nth-child(1) {
-    border-top: 4px solid var(--primary);
+    border-top: 4px solid var(--orange);
 }
 
 .card2:nth-child(2) {
-    border-top: 4px solid var(--rose);
+    border-top: 4px solid var(--primary);
 }
 
 
