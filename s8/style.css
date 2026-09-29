@@ -189,6 +189,7 @@ h1 {
     height: fit-content;
     aspect-ratio: 1.5/1;
     border-radius: 8px;
+    display: block;
 }
 
 #gallery-card3 {
@@ -203,6 +204,7 @@ h1 {
     height: fit-content;
     aspect-ratio: 1.5/1;
     border-radius: 8px;
+    display: block;
 }
 
 .card h3 {
