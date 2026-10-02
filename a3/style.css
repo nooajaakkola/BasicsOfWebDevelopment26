@@ -34,7 +34,7 @@ span {
     border-left: 2px solid #d7d7d7;
     border-right: 2px solid #d7d7d7;
     
-    margin: 0px 10vw 0px 10vw;
+    margin: 0px 15vw 0px 15vw;
     padding: 0px 10vw 0px 10vw;
 }
 
@@ -46,7 +46,7 @@ section {
 img {
     width: 50vw;
     border-radius: 1.5vh;
-
+    max-width: 1000px;
 }
 
 .cards {
