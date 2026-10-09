@@ -4,7 +4,7 @@ html {
 }
 
 :root {
-    --background: #fdfbf7;
+    --background: #f7f7fd;
     --surface: #f5f0eb;
     --text: #2f2c2b;
     --second-text: #574540;
@@ -12,10 +12,11 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Orbitron', sans-serif;
     color: var(--text);
     justify-content: center;
     margin: 0;
+    padding-top: 2vw;
     background-color: var(--background);
 }
 
@@ -31,7 +32,9 @@ h2 {
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1.9em;
+    font-weight: normal;
+    margin: 0;
 }
 
 h4 {
@@ -40,10 +43,17 @@ h4 {
 
 p {
     text-align: justify;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 span {
     color: var(--primary);
+}
+
+#selfie-image {
+    width: 100%;
+    display: block;
+    border-radius: 1vh;
 }
 
 header {
@@ -62,17 +72,19 @@ header {
     border-bottom: 0.5px solid var(--accent);
 }
 
-#main-container {
+.main-container {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
-    display: block;
     text-align: center;
+    align-items: center;
     width: auto;
     margin: 0px 9vw 0 9vw;
     padding: 0px 9vw 0px 9vw;
 }
 
 section {
-    height: 75vh;
+    height: 60vh;
     padding: 6vw 0vw 6vw 0vw;
     margin: 0px;
     align-items: center;
@@ -87,13 +99,14 @@ section {
 }
 
 .header-nav {
-    gap: 1.5rem;
+    gap: 3rem;
     display: flex;
 }
 
-.header-nav a {
+.header-nav a, .header-nav h4 { 
     text-decoration: none;
     color: var(--text);
+    font-weight:normal;
 }
 
 #header-logo {
@@ -108,29 +121,55 @@ section {
 
 #cards-section {
     display: block;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
 }
 
 .cards {
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    gap: 1rem;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
 .card {
     border-radius: 1vh;
-    border-bottom: 0.1rem solid black;
-    border-right: 0.1rem solid black;
-    padding: 2vh;
+    border: 0.1rem solid var(--text);
+    padding: 0vh;
 }
 
 .half-card {
     grid-column: span 1;
+    max-width: 100%;
 }
 
 .full-card {
     grid-column: span 2;
+    max-width: 100%;
+}
+
+.tall-card {
+    grid-column: span 1;
+    grid-row: span 2;
+    max-width: 100%;
+}
+
+.card-left {
+    grid-column-start: 1;
+}
+
+.card-right {
+    grid-column-start: 2;
+}
+
+.card h3 {
+    margin: 1rem 0 1rem 0;
+}
+
+.card p {
+    margin: 0 1rem 1rem 1rem;
 }
 
 /*
@@ -149,8 +188,8 @@ section {
 
 @media (max-width: 1000px) {
   .main-container {
-    margin: 0px;
-    border: 0px;
+    margin: 0;
+    padding: 50px;
   }
 
   img {
@@ -164,5 +203,24 @@ section {
 
   .full-card {
     grid-column: span 1;
+  }
+
+  header {
+    padding: 0 50px 0 50px;
+  }
+
+  .header-nav {
+    display:none;
+  }
+}
+
+@media (min-width: 2000px) {
+  .main-container {
+    padding: 0 11vw 0 11vw;
+    margin: 0 10vw 0 10vw;
+  }
+
+  header {
+    padding: 0 22vw 0 22vw;
   }
 }
