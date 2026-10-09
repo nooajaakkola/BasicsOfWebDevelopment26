@@ -19,6 +19,16 @@ body {
     margin: 0;
     padding-top: 2vw;
     background-color: var(--background);
+    background: 
+    repeating-linear-gradient(
+      315deg,
+      var(--text),
+      white 1px,
+      transparent 2px,
+      transparent 20px
+    ),
+
+    linear-gradient(135deg, var(--background), var(--background));
 }
 
 h1 span, h4 span, p span {
@@ -142,6 +152,7 @@ a, .header-nav h4 {
     border-radius: 1vh;
     border: 0.1rem solid var(--text);
     padding: 0vh;
+    background: var(--background);
 }
 
 .half-card {
@@ -185,19 +196,33 @@ li {
     margin-bottom: 0.5rem;
 }
 
-/*
-.card:nth-child(1) {
-    
+/* GALLERY OSIO*/
+
+.gallery-section {
+    padding: 0 10vw 0 10vw;
+    display: block;
 }
 
-.card:nth-child(2) {
-    
+#gallery-title {
+    margin: 5vw;
+    margin-top: 10vw;
 }
 
-.card:nth-child(3) {
-    
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 1rem;
 }
-*/
+
+.gallery-grid div {
+    max-height: 15vh;
+    border: 1px solid black;
+}
+
+.gallery-grid img {
+    height: 15vh;
+    border-radius: 0.8vh;
+}
 
 @media (max-width: 1000px) {
   .main-container {
