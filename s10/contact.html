@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ville Heikkiniemi">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Centria Edu | Basics of Web Development</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    centria <span>edu</span>
+                </div>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#topics">Topics</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="topics" id="contact">
+            <form class="card" action="https://httpbin.org/post" method="post">
+                <input type="text" label="nimi-input" name="nimet" placeholder="Nimi" required>
+                <input type="email" label="sposti-input" name="spostit" placeholder="Sähköposti" required>
+                <input type="tel" label="puh-input" name="puhkut" placeholder="Puhelin" >
+                <select>
+                    <option>Yhteyden oton syy</option>
+                    <option>Yhteistyökumppanit</option>
+                    <option>Valitukset</option>
+                    <option>burger</option>
+
+                    <div id="radio-buttons">
+                        <input type="radio" id="sposti" name="valinta" value="sposti"/>
+                        <label for="sposti">Sähköposti</label>
+                        <input type="radio" id="puh" name="valinta" value="puh"/>
+                        <label for="puh">Puhelin</label>
+                    </div>
+
+                    
+                    <textarea id="viesti" 
+                                name="viesti" 
+                                placeholder="Kirjoita viesti..."
+                                rows="5" 
+                                cols="30"
+                                required></textarea>
+
+                    <button type="submit">Lähetä</button>
+                </select>
+            </form>
+            
+            
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container contacts-footer">
+            <p>© 2026 Centria Edu</p>
+        </div>
+    </footer>
+
+
+</body></html>
