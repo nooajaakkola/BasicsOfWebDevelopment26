@@ -19,16 +19,6 @@ body {
     margin: 0;
     padding-top: 2vw;
     background-color: var(--background);
-    background: 
-    repeating-linear-gradient(
-      315deg,
-      var(--text),
-      white 1px,
-      transparent 2px,
-      transparent 20px
-    ),
-
-    linear-gradient(135deg, var(--background), var(--background));
 }
 
 h1 span, h4 span, p span {
@@ -56,8 +46,9 @@ h4 {
 }
 
 p {
-    text-align: justify;
     font-family: 'Rajdhani', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 span {
@@ -154,6 +145,7 @@ a, .header-nav h4 {
     border: 0.1rem solid var(--text);
     padding: 0vh;
     background: var(--background);
+    
 }
 
 .half-card {
@@ -223,8 +215,10 @@ li {
 }
 
 .gallery-grid img {
-    height: 25vh;
+    height: clamp(100px, 30vh, 300px);
+    width: auto;
     border-radius: 0.8vh;
+    
 }
 
 @media (max-width: 1200px) {
@@ -235,6 +229,19 @@ li {
 
   #cards-section {
     height: clamp(250px, 100%, 800px);
+  }
+
+  .gallery-grid, .gallery-section {
+    padding: 5rem;
+  }
+
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+}
+
+  section {
+    height: 100%;
   }
 
   img {
@@ -258,8 +265,12 @@ li {
     padding: 0 50px 0 50px;
   }
 
-  .header-nav {
-    display:none;
+  .header-title h4 {
+    display: none;
+  }
+
+  .header-nav a {
+    font-size: 2rem;
   }
 }
 
