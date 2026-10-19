@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Rekisteröinti</title>
+        <link rel="icon" href="images/logo.ico">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:ital,wght@1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-title">
+                <a href="index.html"><img src="images/logo.png" id="header-logo" alt="logo of a kiwi with and sniper rifle and a minimani double m"></a>
+                <h4><span>O</span>hjelmoinnin <span>P</span>erusteet</h4>
+            </div>
+            <div class="header-nav">
+                <a href="index.html"><h4>Koti</h4></a>
+                <a href="index.html#cards-section"><h4>Kortit</h4></a>
+                <a href="#gallery"><h4>Galleria</h4></a>
+                <a href="register.html"><h4>Rekisteröinti</h4></a>
+            </div>
+        </header>
+
+
+        <main class="main-container" id="home-section">
+            <section class="gallery-section">
+
+                <div id="gallery-title">
+                    <h1><span>R</span>ekisteröinti</h1>
+
+                    <h4>Rekisteröidy oheisella lomakkeella.</h4>
+
+                    <div class="card form-card">
+                        <form method="POST">
+                            <div class="form-section">
+                                <label for="name-input">Nimi:</label>
+                                <input type="text" name="name-input" id="name-input" placeholder="Nimi..." required>
+                            </div>
+                            
+                            <div class="form-section">
+                                <label for="email-input">Sähköposti:</label>
+                                <input type="email" name="email-input" id="email-input" placeholder="Sähköpostiosoite..." required>
+                            </div>
+                            
+                            <div class="form-section">
+                                <label for="user-input">Käyttäjänimi:</label>
+                                <input type="text" name="user-input" id="user-input" placeholder="Käyttäjänimi..." required minlength="3">
+                            </div>
+
+                            <div class="form-section">
+                                <label for="password-input">Salasana:</label>
+                                <input type="password" name="password-input" id="password-input" placeholder="Salasana..." required minlength="8">
+                            </div>
+
+                            <div class="form-section">
+                                <label for="type-selection">Type of user:</label>
+
+                                <select required>
+                                    <option>Pro-gamer</option>
+                                    <option>Newbie</option>
+                                    <option>Admin</option>
+                                </select>
+                            </div>
+
+                            <div class="form-terms-section form-section">
+                                <label for="terms-input">Hyväksyn käyttöehdot:</label>
+                                <input name="terms-input" id="terms-input" type="checkbox" required>
+                            </div>
+
+                            <div class="form-section form-submit-section">
+                                <input type="reset" name="reset" value="Tyhjennä">
+                                <input type="submit" name="submit" value="Lähetä">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
