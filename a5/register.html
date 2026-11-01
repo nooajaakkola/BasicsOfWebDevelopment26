@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Register</title>
+        <link rel="icon" href="images/logo.ico">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:ital,wght@1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-title">
+                <a href="index.html"><img src="images/logo.png" id="header-logo" alt="logo of a kiwi with and sniper rifle and a minimani double m"></a>
+                <h4><span>O</span>hjelmoinnin <span>P</span>erusteet</h4>
+            </div>
+            <nav class="header-nav">
+                <a href="index.html"><h4>Koti</h4></a>
+                <a href="index.html#cards-section"><h4>Kortit</h4></a>
+                <a href="gallery.html"><h4>Galleria</h4></a>
+                <a href="register.html" class="active" aria-current="page"><h4>Register</h4></a>
+            </nav>
+        </header>
+
+        <main class="main-container" id="home-section">
+            <section class="register-section">
+                <h1><span>R</span>ekisteröidy</h1>
+                <p>Liity <span>O</span>hjelmoinnin <span>P</span>erusteet -sivuston jäseneksi täyttämällä alla olevat tiedot. Kaikki kentät ovat pakollisia.</p>
+
+                <form class="register-form card" action="https://httpbin.org/post" method="post">
+                    <div class="form-field">
+                        <label for="name">Nimi</label>
+                        <input type="text" id="name" name="name" autocomplete="name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Sähköpostiosoite</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="username">Käyttäjänimi</label>
+                        <input type="text" id="username" name="username" minlength="3" autocomplete="username" required>
+                        <small>Vähintään 3 merkkiä.</small>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="password">Salasana</label>
+                        <input type="password" id="password" name="password" minlength="8" autocomplete="new-password" required>
+                        <small>Vähintään 8 merkkiä.</small>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="usertype">Käyttäjätyyppi</label>
+                        <select id="usertype" name="usertype" required>
+                            <option value="" disabled selected>Valitse käyttäjätyyppi</option>
+                            <option value="opiskelija">Ohjelmoinnin opiskelija</option>
+                            <option value="harrastaja">Harrastelijaohjelmoija</option>
+                            <option value="opettaja">Opettaja</option>
+                            <option value="vierailija">Satunnainen vierailija</option>
+                        </select>
+                    </div>
+
+                    <div class="terms-box">
+                        <h4>Käyttöehdot</h4>
+                        <p>Tämä on harjoitustyösivusto. Lomakkeelle syötettyjä tietoja ei tallenneta, vaan ne lähetetään testipalveluun. Älä käytä oikeaa salasanaasi. Sivuston kuvat ja sisältö ovat vain opetuskäyttöön.</p>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" id="terms" name="terms" value="accepted" required>
+                        <label for="terms">Hyväksyn käyttöehdot</label>
+                    </div>
+
+                    <button type="submit">Register</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
