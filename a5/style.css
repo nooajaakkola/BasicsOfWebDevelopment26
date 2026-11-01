@@ -226,7 +226,6 @@ li {
     height: clamp(100px, 30vh, 300px);
     width: auto;
     border-radius: 0.8vh;
-
     border-top: 3px solid var(--accent);
     border-left: 3px solid var(--accent);
     border-right: 3px solid var(--text);

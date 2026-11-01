@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ville Heikkiniemi">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Centria Edu | Basics of Web Development</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    centria <span>edu</span>
+                </div>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#topics">Topics</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="topics" id="contact">
+            <form class="card" action="https://httpbin.org/post" method="post">
+                <div>
+                    <div id="name-input">
+                        <label>Name</label>
+                        <input type="text" label="nimi-input" name="nimet" placeholder="Nimi" required minlength="2" maxlength="80">
+                    </div>
+                    <p id="phone-help">
+                    Enter 2–80 letters. 
+                </p> 
+                </div>
+               
+                <div>
+                    <div id="name-input">
+                        <label>Email</label>
+                        <input type="email" label="sposti-input" name="spostit" placeholder="Sähköposti" required maxlength="120">
+                    </div>
+                    <p id="phone-help">
+                    Enter E-mail address in correct form. 
+                </p> 
+                </div>
+                
+                
+
+
+                <div>
+                <div id="phone-input">
+                    <label for="puhkut">Phone number</label>
+                    <input type="tel" label="puh-input" name="puhkut" placeholder="Puhelin" pattern="^\+?[0-9]{7,15}$">
+                </div>
+                    
+                <p id="phone-help" style="text-align: center;">
+                    Enter 7–15 digits, optionally starting with +.
+                    Do not use spaces or hyphens. Example: +358401234567.
+                </p> 
+                </div>
+                
+                
+
+
+                <select required>
+                    <option value="" disabled selected>Valitse aihe...</option>
+                    <option value="yhteistyokumppanit">Yhteistyökumppanit</option>
+                    <option value="valitukset">Valitukset</option>
+                    <option value="palaute">Muu palaute</option>
+                </select>
+
+                <label>Yhteydenottotapa</label>
+
+                <div id="radio-buttons" style="gap:0.5rem;">
+                    <input type="radio" id="sposti" name="valinta" value="sposti" required/>
+                    <label for="sposti">Sähköposti</label>
+                    <input type="radio" id="puh" name="valinta" value="puh"/>
+                    <label for="puh">Puhelin</label>
+                </div>
+
+                    
+                <textarea id="viesti" 
+                            name="viesti" 
+                            placeholder="Kirjoita viesti... (20 - 1000 merkkiä, pakollinen)"
+                            rows="5" 
+                            cols="30"
+                            required
+                            minlength="20"
+                            maxlength="1000"></textarea>
+
+                <button type="submit">Lähetä</button>
+            </form>
+            
+            
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container contacts-footer">
+            <p>© 2026 Centria Edu</p>
+        </div>
+    </footer>
+
+
+</body></html>
