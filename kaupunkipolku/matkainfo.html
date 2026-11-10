@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kaupunkipolku</title>
+  <meta name="description" content="Matkainfo: mitä hintaan kuuluu, kenelle matka sopii, milloin kannattaa matkustaa sekä matkojen vertailu ja usein kysytyt kysymykset.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="sivun-ylaosa">
+    <div class="sivun-sisalto ylaosa-sisalto">
+      <a class="logo" href="index.html">Kaupunkipolku</a>
+      <nav aria-label="Päävalikko">
+        <ul class="paavalikko-lista">
+          <li><a class="valikko-linkki" href="index.html">Etusivu</a></li>
+          <li><a class="valikko-linkki" href="matkainfo.html" aria-current="page">Matkainfo</a></li>
+          <li><a class="valikko-linkki" href="matkatoive.html">Matkatoive</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="sivun-sisalto paasisalto">
+    <div class="sivun-otsikko-alue">
+      <h1>Matkainfo</h1>
+      <p class="sivun-ingressi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tästä näet nopeasti, mitä matka sisältää ja milloin sen kannattaa tehdä.</p>
+    </div>
+
+    <section class="osio" aria-labelledby="nostot-otsikko">
+      <h2 id="nostot-otsikko">Hyvä tietää ennen matkaa</h2>
+      <div class="nostot">
+        <article class="nosto">
+          <h3>Mitä hintaan kuuluu</h3>
+          <p>Lorem ipsum dolor sit amet. Hintaan kuuluvat meno-paluulennot, majoitus keskeisellä sijainnilla, aamiaiset ja kenttäkuljetukset.</p>
+        </article>
+        <article class="nosto">
+          <h3>Kenelle matka sopii</h3>
+          <p>Consectetur adipiscing elit. Matkat sopivat pariskunnille, ystäväporukoille ja yksin matkustaville, jotka haluavat kokea kaupungin omaan tahtiinsa.</p>
+        </article>
+        <article class="nosto">
+          <h3>Milloin kannattaa matkustaa</h3>
+          <p>Sed do eiusmod tempor. Touko–kesäkuu ja syyskuu ovat parhaat ajat: lämpimät päivät, mutta jonot ja hinnat pysyvät kohtuullisina.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="osio" aria-labelledby="vertailu-otsikko">
+      <h2 id="vertailu-otsikko">Matkojen vertailu</h2>
+      <div class="taulukko-kaara">
+        <table class="vertailutaulukko">
+          <caption>Kaupunkipolun matkat: kesto, hinta ja hintaan sisältyvät palvelut</caption>
+          <thead>
+            <tr>
+              <th scope="col">Kohde</th>
+              <th scope="col">Kesto</th>
+              <th scope="col">Hinta</th>
+              <th scope="col">Hintaan sisältyy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Tukholma</th>
+              <td>3 päivää</td>
+              <td>349 €</td>
+              <td>Lennot, majoitus, aamiainen, kolmen päivän joukkoliikennelippu</td>
+            </tr>
+            <tr>
+              <th scope="row">Praha</th>
+              <td>4 päivää</td>
+              <td>429 €</td>
+              <td>Lennot, majoitus, aamiainen, opastettu kävelykierros</td>
+            </tr>
+            <tr>
+              <th scope="row">Lissabon</th>
+              <td>5 päivää</td>
+              <td>599 €</td>
+              <td>Lennot, majoitus, aamiainen, raitiovaunukierros ja päiväretki Sintraan</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="osio" aria-labelledby="ukk-otsikko">
+      <h2 id="ukk-otsikko">Usein kysytyt kysymykset</h2>
+      <div class="ukk-lista">
+        <details class="ukk-kysymys">
+          <summary>Voinko muuttaa varausta matkan jälkeen?</summary>
+          <p>Lorem ipsum dolor sit amet. Päivämäärää ja matkustajien nimiä voi muuttaa maksutta 14 päivää ennen lähtöä, minkä jälkeen muutoksista veloitetaan käsittelymaksu.</p>
+        </details>
+        <details class="ukk-kysymys">
+          <summary>Tarvitsenko passin vai riittääkö henkilökortti?</summary>
+          <p>Consectetur adipiscing elit. Kaikkiin kohteisiimme pääsee voimassa olevalla henkilökortilla tai passilla, mutta tarkista asiakirjan voimassaolo ennen matkaa.</p>
+        </details>
+        <details class="ukk-kysymys">
+          <summary>Onko matkoille mukana opas?</summary>
+          <p>Sed do eiusmod tempor incididunt. Sisällytämme jokaiseen matkaan vähintään yhden opastetun kierroksen, ja loppuaika on vapaata kaupunkikävelyä oman mielenkiinnon mukaan.</p>
+        </details>
+        <details class="ukk-kysymys">
+          <summary>Voiko matkan varata yksin matkustavalle?</summary>
+          <p>Ut labore et dolore magna aliqua. Kyllä, yhden hengen huoneet ovat saatavilla lisämaksusta, ja tarjoamme ryhmäkierroksia, joilla tutustuu helposti muihin matkailijoihin.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sivun-alaosa">
+    <div class="sivun-sisalto alaosa-sisalto">
+      <div>
+        <p class="alaosa-nimi">Kaupunkipolku Oy</p>
+        <address>
+          Esimerkkikatu 12, 00100 Helsinki<br>
+          Puh. <a href="tel:+358100000000">010 000 0000</a><br>
+          <a href="mailto:info@kaupunkipolku.example">info@kaupunkipolku.example</a>
+        </address>
+      </div>
+      <p class="alaosa-oikeudet">© 2026 Kaupunkipolku. Kuvitteellinen yritys harjoitustehtävää varten.</p>
+    </div>
+  </footer>
+</body>
+</html>

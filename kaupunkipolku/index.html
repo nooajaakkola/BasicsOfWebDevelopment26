@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kaupunkipolku</title>
+  <meta name="description" content="Kaupunkipolku järjestää helppoja ja huolella suunniteltuja kaupunkimatkoja Tukholmaan, Prahaan ja Lissaboniin.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="sivun-ylaosa">
+    <div class="sivun-sisalto ylaosa-sisalto">
+      <a class="logo" href="index.html">Kaupunkipolku</a>
+      <nav aria-label="Päävalikko">
+        <ul class="paavalikko-lista">
+          <li><a class="valikko-linkki" href="index.html" aria-current="page">Etusivu</a></li>
+          <li><a class="valikko-linkki" href="matkainfo.html">Matkainfo</a></li>
+          <li><a class="valikko-linkki" href="matkatoive.html">Matkatoive</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="sivun-sisalto paasisalto">
+    <section class="osio esittely" aria-labelledby="esittely-otsikko">
+      <div class="esittely-teksti">
+        <h1 id="esittely-otsikko">Kaupunki aukeaa, kun kävelet sen kaduilla</h1>
+        <p class="esittely-ingressi">Kaupunkipolku suunnittelee rennot ja helposti toteutettavat kaupunkimatkat: sijainniltaan hyvät hotellit, mutkattomat lennot ja aikaa jäädä kahvilaan, kun katu kutsuu.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a class="painike" href="matkainfo.html">Tutustu matkainfoon</a>
+      </div>
+      <div class="esittely-kuva">
+        <img src="images/blank76-matera-4612016_1920.webp" alt="Kaupunkimaisema auringonlaskun aikaan: vanhan kaupungin kattoja ja katulampuin valaistuja katuja" width="800" height="600">
+        <span class="esittely-merkki">Matkat alkaen 349 €</span>
+      </div>
+    </section>
+
+    <section class="osio" aria-labelledby="kohteet-otsikko">
+      <h2 id="kohteet-otsikko">Kolme kaupunkia, kolme tunnelmaa</h2>
+      <div class="kohdekortit">
+        <article class="kohdekortti kortti-tukholma">
+          <div class="kortti-kuva">
+            <img src="images/johannesaxner-water-3147833_1920.webp" alt="Öinen Tukholman satamamaisema keltaisten valojen koristavan kaupungin." width="600" height="450">
+          </div>
+          <div class="kortti-teksti">
+            <h3>Tukholma</h3>
+            <p class="kortti-kesto">Kesto: 3 päivää</p>
+            <p class="kortti-hinta">Alkaen 349 €</p>
+          </div>
+        </article>
+
+        <article class="kohdekortti kortti-praha">
+          <div class="kortti-kuva">
+            <img src="images/vaclavikm-charles-bridge-5818730_1920.webp" alt="Prahan linnat yössä, pehmeästi valaistu." width="600" height="450">
+          </div>
+          <div class="kortti-teksti">
+            <h3>Praha</h3>
+            <p class="kortti-kesto">Kesto: 4 päivää</p>
+            <p class="kortti-hinta">Alkaen 429 €</p>
+          </div>
+        </article>
+
+        <article class="kohdekortti kortti-lissabon">
+          <div class="kortti-kuva">
+            <img src="images/12019-lisbon-1801727_1920.webp" alt="Kaunis ja rauhallinen Lissabonin katu aamunkoitossa." width="800" height="1000">
+          </div>
+          <div class="kortti-teksti">
+            <h3>Lissabon</h3>
+            <p class="kortti-kesto">Kesto: 5 päivää</p>
+            <p class="kortti-hinta">Alkaen 599 €</p>
+            <p class="kortti-kuvaus">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mäkiset kujat, atlantin valo ja pastel de nata joka kulmassa tekevät matkasta ikimuistoisen.</p>
+            <a class="painike" href="matkatoive.html">Jätä matkatoive</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sivun-alaosa">
+    <div class="sivun-sisalto alaosa-sisalto">
+      <div>
+        <p class="alaosa-nimi">Kaupunkipolku Oy</p>
+        <address>
+          Esimerkkikatu 12, 00100 Helsinki<br>
+          Puh. <a href="tel:+358100000000">010 000 0000</a><br>
+          <a href="mailto:info@kaupunkipolku.example">info@kaupunkipolku.example</a>
+        </address>
+      </div>
+      <p class="alaosa-oikeudet">© 2026 Kaupunkipolku. Kuvitteellinen yritys harjoitustehtävää varten.</p>
+    </div>
+  </footer>
+</body>
+</html>

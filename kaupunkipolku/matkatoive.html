@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kaupunkipolku</title>
+  <meta name="description" content="Jätä matkatoive Kaupunkipolulle ja katso yrityksen yhteystiedot. Lomake on harjoitus, eikä tietoja lähetetä palvelimelle.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="sivun-ylaosa">
+    <div class="sivun-sisalto ylaosa-sisalto">
+      <a class="logo" href="index.html">Kaupunkipolku</a>
+      <nav aria-label="Päävalikko">
+        <ul class="paavalikko-lista">
+          <li><a class="valikko-linkki" href="index.html">Etusivu</a></li>
+          <li><a class="valikko-linkki" href="matkainfo.html">Matkainfo</a></li>
+          <li><a class="valikko-linkki" href="matkatoive.html" aria-current="page">Matkatoive</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="sivun-sisalto paasisalto">
+    <div class="sivun-otsikko-alue">
+      <h1>Matkatoive</h1>
+      <p class="sivun-ingressi">Kerro, minne haluaisit lähteä ja milloin. Täytä kaikki kentät, niin ehdotamme sinulle sopivaa matkaa.</p>
+    </div>
+
+    <div class="lomake-asettelu">
+      <section class="lomake-alue" aria-labelledby="lomake-otsikko">
+        <h2 id="lomake-otsikko">Lähetä toiveesi</h2>
+        
+
+        <form class="matkatoive-lomake" id="matkatoive-lomake" novalidate>
+          <div class="lomake-ruudukko">
+            <div class="kentta kentta-koko-leveys">
+              <label for="sahkoposti">Sähköposti</label>
+              <input type="email" id="sahkoposti" name="sahkoposti" autocomplete="email" placeholder="matti@esimerkki.fi" required aria-describedby="sahkoposti-virhe">
+              <p class="virheteksti" id="sahkoposti-virhe" hidden></p>
+            </div>
+
+            <div class="kentta kentta-koko-leveys">
+              <label for="kohde">Kohde</label>
+              <select id="kohde" name="kohde" required>
+                <option value="" selected>Valitse kohde</option>
+                <option value="tukholma">Tukholma, 3 päivää</option>
+                <option value="praha">Praha, 4 päivää</option>
+                <option value="lissabon">Lissabon, 5 päivää</option>
+              </select>
+            </div>
+
+            <div class="kentta">
+              <label for="lahtopaiva">Lähtöpäivä</label>
+              <input type="date" id="lahtopaiva" name="lahtopaiva" required>
+            </div>
+
+            <div class="kentta">
+              <label for="matkustajat">Matkustajien määrä (1–8)</label>
+              <input type="number" id="matkustajat" name="matkustajat" min="1" max="8" step="1" inputmode="numeric" required>
+            </div>
+          </div>
+
+          <button class="painike" type="submit">Lähetä matkatoive</button>
+          <p class="lomake-tila" id="lomake-tila" role="status" hidden>Kiitos! Lomake täytettiin oikein. Tietoja ei kuitenkaan lähetetty mihinkään, koska tämä on harjoitus.</p>
+        </form>
+      </section>
+
+      <aside class="yhteys-alue" aria-labelledby="yhteys-otsikko">
+        <div class="yhteystiedot-laatikko">
+          <h2 id="yhteys-otsikko">Yhteystiedot</h2>
+          <address>
+            Kaupunkipolku Oy<br>
+            Esimerkkikatu 12<br>
+            00100 Helsinki<br>
+            Puh. <a href="tel:+358100000000">010 000 0000</a><br>
+            <a href="mailto:info@kaupunkipolku.example">info@kaupunkipolku.example</a>
+          </address>
+          <p>Asiakaspalvelu auki ma–pe klo 9–16.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="sivun-alaosa">
+    <div class="sivun-sisalto alaosa-sisalto">
+      <div>
+        <p class="alaosa-nimi">Kaupunkipolku Oy</p>
+        <address>
+          Esimerkkikatu 12, 00100 Helsinki<br>
+          Puh. <a href="tel:+358100000000">010 000 0000</a><br>
+          <a href="mailto:info@kaupunkipolku.example">info@kaupunkipolku.example</a>
+        </address>
+      </div>
+      <p class="alaosa-oikeudet">© 2026 Kaupunkipolku. Kuvitteellinen yritys harjoitustehtävää varten.</p>
+    </div>
+  </footer>
+
+  <script src="lomake.js"></script>
+</body>
+</html>
