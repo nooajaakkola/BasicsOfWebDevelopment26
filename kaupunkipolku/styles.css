@@ -3,14 +3,14 @@
   --vari-pinta: #ffffff;
   --vari-teksti: #16202e;
   --vari-himmea: #4b5868;
-  --vari-paa: #0e3b43;
-  --vari-paa-tumma: #092a30;
-  --vari-linkki: #0b6e7a;
+  --vari-paa: #1a97ad;
+  --vari-paa-tumma: #146877;
+  --vari-linkki: #0b8e9c;
   --vari-linkki-hover: #084e57;
-  --vari-korostus: #f2b705;
-  --vari-korostus-hover: #d99f00;
+  --vari-korostus: #ffb1ab;
+  --vari-korostus-hover: #ffb1ab;
   --vari-reuna: #cfd6df;
-  --vari-virhe: #b42318;
+  --vari-virhe: #ffb1ab;
   --vari-virhe-tausta: #fdecea;
   --vari-onnistui: #0f5132;
   --vari-onnistui-tausta: #e3f4ea;
@@ -330,17 +330,6 @@ select:focus-visible {
 
 
 
-.esittely-merkki {
-  position: absolute;
-  left: 0;
-  bottom: 1.25rem;
-  padding: 0.4rem 1rem;
-  font-weight: 700;
-
-
-  color: var(--vari-teksti);
-  background: var(--vari-korostus);
-}
 
 .kohdekortit {
   display: grid;
@@ -360,7 +349,7 @@ select:focus-visible {
   border: 1px solid var(--vari-reuna);
   border-radius: var(--kulma);
   overflow: hidden;
-  box-shadow: var(--varjo);
+  box-shadow: 5px 5px 20px black;
 }
 
 
@@ -535,34 +524,11 @@ select:focus-visible {
   padding: var(--vali-s) 3rem var(--vali-s) var(--vali-m);
   font-weight: 700;
   color: var(--vari-paa);
-  cursor: pointer;
   list-style: none;
 }
 
 
-.ukk-kysymys summary::-webkit-details-marker {
-  display: none;
-}
 
-.ukk-kysymys summary::after {
-  content: "+";
-  position: absolute;
-  top: 50%;
-  right: var(--vali-m);
-  transform: translateY(-50%);
-  font-size: 1.5rem;
-  line-height: 1;
-  color: var(--vari-linkki);
-}
-
-
-.ukk-kysymys[open] summary::after {
-  content: "\2212";
-}
-
-.ukk-kysymys[open] summary {
-  border-bottom: 1px solid var(--vari-reuna);
-}
 
 .ukk-kysymys p {
   margin: 0;
@@ -584,9 +550,6 @@ select:focus-visible {
   grid-area: lomake;
 }
 
-.yhteys-alue {
-  grid-area: yhteys;
-}
 
 
 
@@ -597,6 +560,7 @@ select:focus-visible {
   background: var(--vari-pinta);
   border: 1px solid var(--vari-reuna);
   border-radius: var(--kulma);
+  box-shadow: 5px 5px 20px black;
 }
 
 
@@ -672,35 +636,6 @@ select:focus-visible {
   color: var(--vari-onnistui);
   background: var(--vari-onnistui-tausta);
   border-left: 0.35rem solid var(--vari-onnistui);
-}
-
-.yhteystiedot-laatikko {
-  padding: var(--vali-m);
-  color: #ffffff;
-  background: var(--vari-paa);
-  border-radius: var(--kulma);
-}
-
-.yhteystiedot-laatikko h2 {
-  font-size: 1.5rem;
-  color: #ffffff;
-}
-
-.yhteystiedot-laatikko address {
-  font-style: normal;
-  line-height: 1.8;
-}
-
-.yhteystiedot-laatikko a {
-  color: var(--vari-korostus);
-}
-
-.yhteystiedot-laatikko a:hover {
-  color: #ffffff;
-}
-
-.yhteystiedot-laatikko a:focus-visible {
-  outline-color: #ffffff;
 }
 
 
